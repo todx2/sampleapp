@@ -8,5 +8,7 @@ Rails.application.routes.draw do
   get  '/contact', to: 'static_pages#contact'
 
    get  '/signup',  to: 'users#new'
-
+   
+   #ted..will start inserting into database in the nxt chapter
+   #post  '/signup',  to: 'users#new'
 end
