@@ -1,12 +1,12 @@
 Rails.application.routes.draw do
-  get 'static_pages/home'
+  #may 31 2018--replaced it was made by itself
+  #get 'users/new'
 
-  get 'static_pages/help'
+  root 'static_pages#home'
+  get  '/help',    to: 'static_pages#help'
+  get  '/about',   to: 'static_pages#about'
+  get  '/contact', to: 'static_pages#contact'
 
-   # root 'application#hellox'
-    root 'static_pages#home'
+   get  '/signup',  to: 'users#new'
 
-
-
-  get  'static_pages/about'
 end
